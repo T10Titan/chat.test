@@ -39,11 +39,11 @@ public class ChatController
 		return simpleBot;
 	}
 
-	public boolean chatbotCheckers()
+	public String useChatbotCheckers(String input)
 	{
-		boolean isCheck = false;
+		String output = "";
 
-		return isCheck;
+		return output;
 	}
 
 }

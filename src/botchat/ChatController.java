@@ -2,15 +2,16 @@ package botchat;
 
 import javax.swing.JOptionPane;
 
-public class Controllerbot
+
+public class ChatController
 {
-	private void simpleBot()
+	private void SimpleBot()
 	{
 
 	}
 	public void chatController()
 	{
-		simpleBot = new Chatbot();
+		Chatbot = new SimpleBot();
 		
 	}
 

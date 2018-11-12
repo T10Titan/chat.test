@@ -2,55 +2,52 @@ package chat.model;
 
 import java.util.ArrayList;
 
-
 import javax.swing.JOptionPane;
-
 
 public class Chatbot
 {
 
 	private String joke;
-	private String CurrentUser;
-	private String Content;
+	private String currentUser;
+	private String content;
 	private ArrayList<String> responseList;
-	private ArrayList<String> SpookyList;
+	private ArrayList<String> spookyList;
 
-	private void responseList()
+	private ArrayList<String> getResponseList()
 	{
-		
-	}
-
-	private void getCurrentUser()
-	{
+		return responseList;
 
 	}
 
-	private void getContent()
+	private String getCurrentUser()
 	{
-		
+		return currentUser;
 	}
 
-	
-	private void getSpookyList()
+	private String getContent()
 	{
-
+		return content;
 	}
 
-	public void chatBot()
+	private ArrayList<String> getSpookyList()
+	{
+		return spookyList;
+	}
+
+	public Chatbot()
 	{
 		this.joke = "Why did the monkey cross the road? cause I watned to get to out village ";
-		this.CurrentUser = new String("Then I beat the monkey");
-		this.Content = new String("Then the  monkey never came back to our village");
-		
+		this.currentUser = new String("Then I beat the monkey");
+		this.content = new String("Then the  monkey never came back to our village");
+
 		this.responseList = new ArrayList<String>();
-		this.SpookyList = new ArrayList<String>();
-		
+		this.spookyList = new ArrayList<String>();
+
 		buildTheLists();
 	}
-	
-public ArrayList<String> buildTheLists()
+
+	public void buildTheLists()
 	{
-	ArrayList<String> responseList = new ArrayList<String>();
 		responseList.add("No");
 		responseList.add("goodbye.");
 		responseList.add("Hi im T.I. who are you");
@@ -58,37 +55,35 @@ public ArrayList<String> buildTheLists()
 		responseList.add("Oh your just a normal human ok then.....");
 		responseList.add("Halloween is good for candy");
 		responseList.add("Hey listen to this.. Boo. Yea i got ya. dont say I didnt CAUSE I DID!");
-		
-		return responseList;
+
 	}
 
 	public String processText(String userText)
 	{
 		String output = "";
-		
+
 		output += "You said: " + userText;
-		
+
 		return output;
 	}
-
 
 	public void askName()
 	{
 		String userAnswer = JOptionPane.showInputDialog(null, "What is your name");
 		if (userAnswer == null)
 		{
-JOptionPane.showInputDialog(null,"Hey buddy Im not joking wit u");
+			JOptionPane.showInputDialog(null, "Hey buddy Im not joking wit u");
 		}
 	}
-	
+
 	public boolean legitimacyChecker(String input)
 	{
 		boolean isValid = false;
-	if (input == null || input == "")
+		if (input == null || input == "")
 		{
-		isValid = false;
+			isValid = false;
 		}
-	return isValid;
+		return isValid;
 	}
-	
+
 }

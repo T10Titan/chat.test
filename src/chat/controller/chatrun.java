@@ -1,4 +1,4 @@
-package botchat;
+package chat.controller;
 
 public class chatrun
 {

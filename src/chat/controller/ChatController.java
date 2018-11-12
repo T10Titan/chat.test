@@ -18,7 +18,7 @@ public class ChatController
 public void start()
 	
 	{
-		String userInput = "";
+		String userInput = " ";
 		
 		while (!userInput.equalsIgnoreCase("quit"))
 		{
@@ -30,6 +30,7 @@ public void start()
 	{
 		String userInput = JOptionPane.showInputDialog(text);
 		chatbotSays = simpleBot.processText(userInput);
+		
 		return chatbotSays;
 	}
 

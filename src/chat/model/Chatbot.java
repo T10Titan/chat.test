@@ -13,23 +13,23 @@ public class Chatbot
 	private ArrayList<String> responseList;
 	private ArrayList<String> spookyList;
 
-	private ArrayList<String> getResponseList()
+	public ArrayList<String> getResponseList()
 	{
 		return responseList;
 
 	}
 
-	private String getCurrentUser()
+	public String getCurrentUser()
 	{
 		return currentUser;
 	}
 
-	private String getContent()
+	public String getContent()
 	{
 		return content;
 	}
 
-	private ArrayList<String> getSpookyList()
+	public ArrayList<String> getSpookyList()
 	{
 		return spookyList;
 	}
@@ -44,6 +44,20 @@ public class Chatbot
 		this.spookyList = new ArrayList<String>();
 
 		buildTheLists();
+
+	}
+
+	public Chatbot(String content)
+	{
+		this.joke = "Why did the monkey cross the road? cause I watned to get to out village ";
+		this.currentUser = new String("Then I beat the monkey");
+		this.content = new String("Then the  monkey never came back to our village");
+
+		this.responseList = new ArrayList<String>();
+		this.spookyList = new ArrayList<String>();
+
+		buildTheLists();
+
 	}
 
 	public void buildTheLists()
@@ -85,5 +99,26 @@ public class Chatbot
 		}
 		return isValid;
 	}
-
+	
+	public boolean spookyChecker(String input)
+	{
+		boolean isValid = false;
+		if (input == null || input == "")
+		{
+			isValid = false;
+		}
+		return isValid;
+	}
+	
+	public boolean contentChecker(String input)
+	{
+		boolean isValid = false;
+		if (input == null || input == "")
+		{
+			isValid = false;
+		}
+		return isValid;
+	}
+	
+	
 }

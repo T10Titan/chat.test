@@ -13,6 +13,7 @@ public class Chatbot
 	private ArrayList<String> responseList;
 	private ArrayList<String> spookyList;
 
+	
 	public ArrayList<String> getResponseList()
 	{
 		return responseList;

@@ -17,11 +17,11 @@ public class ChatController
 	public void start()
 	{
 		String userInput = " ";
-		
+
 		while (!userInput.equalsIgnoreCase("quit"))
 		{
 			userInput = interactWithChatbot(userInput);
-					
+
 		}
 	}
 

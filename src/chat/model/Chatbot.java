@@ -13,7 +13,6 @@ public class Chatbot
 	private ArrayList<String> responseList;
 	private ArrayList<String> spookyList;
 
-	
 	public ArrayList<String> getResponseList()
 	{
 		return responseList;
@@ -100,7 +99,7 @@ public class Chatbot
 		}
 		return isValid;
 	}
-	
+
 	public boolean spookyChecker(String input)
 	{
 		boolean isValid = false;
@@ -110,7 +109,7 @@ public class Chatbot
 		}
 		return isValid;
 	}
-	
+
 	public boolean contentChecker(String input)
 	{
 		boolean isValid = false;
@@ -120,6 +119,5 @@ public class Chatbot
 		}
 		return isValid;
 	}
-	
-	
+
 }
